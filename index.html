@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Portal</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+
+    </style>
+</head>
+
+<body class="container mx-auto">
+
+    <header>
+        <nav class="mt-9">
+            <div id="categories" class="flex gap-5"></div>
+        </nav>
+
+        <div class="mt-10 bg-slate-400 p-5 rounded-xl flex gap-2">
+            <input id="input-id" type="text" placeholder="Search here by catagory name..."
+                class="input flex-1 input-bordered outline-none border-none" />
+            <button class="btn btn-primary outline-none border-none" onclick="searchId()">Search</button>
+        </div>
+
+        <div id="loading-spinner" class="text-center my-40 hidden">
+            <span class="loading loading-spinner loading-lg text-primary"></span>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="mt-20">
+            <div id="news-cards">
+
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
